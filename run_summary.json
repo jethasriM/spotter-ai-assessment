@@ -1,0 +1,89 @@
+{
+  "cleaning": {
+    "rows_in": 48000,
+    "negative_weights_flipped": 292,
+    "after_dedupe_load_id": 48000,
+    "after_dedupe_content": 48000,
+    "dropped_invalid_date_rate_distance": 0,
+    "weight_imputed": 300,
+    "dropped_rpm_outliers": 677,
+    "rows_out": 47323
+  },
+  "calendar": "weekly",
+  "cv_mode": "lomo",
+  "validation_agreement": 0.4655,
+  "selection_folds": [
+    "2025-04",
+    "2025-05",
+    "2025-07",
+    "2025-08",
+    "2025-10"
+  ],
+  "usable_feature_sets": [
+    "base",
+    "quote"
+  ],
+  "cv_gap_months": 1,
+  "validation_features": "quote",
+  "validation_model": "twostage",
+  "december_model": "ridge",
+  "december_in_training_data": false,
+  "cv_mean": [
+    {
+      "features": "base",
+      "model": "hgb_small",
+      "MAE": 76.68,
+      "RMSE": 101.497,
+      "MAPE%": 3.224
+    },
+    {
+      "features": "base",
+      "model": "hybrid",
+      "MAE": 81.129,
+      "RMSE": 106.785,
+      "MAPE%": 3.401
+    },
+    {
+      "features": "base",
+      "model": "ridge",
+      "MAE": 74.109,
+      "RMSE": 99.983,
+      "MAPE%": 3.115
+    },
+    {
+      "features": "quote",
+      "model": "hgb_small",
+      "MAE": 61.307,
+      "RMSE": 85.65,
+      "MAPE%": 2.614
+    },
+    {
+      "features": "quote",
+      "model": "hybrid",
+      "MAE": 55.362,
+      "RMSE": 79.185,
+      "MAPE%": 2.287
+    },
+    {
+      "features": "quote",
+      "model": "ridge",
+      "MAE": 73.491,
+      "RMSE": 99.694,
+      "MAPE%": 3.146
+    },
+    {
+      "features": "quote",
+      "model": "twostage",
+      "MAE": 33.641,
+      "RMSE": 49.782,
+      "MAPE%": 1.402
+    },
+    {
+      "features": "quote",
+      "model": "twostage_shrunk",
+      "MAE": 50.839,
+      "RMSE": 70.391,
+      "MAPE%": 2.12
+    }
+  ]
+}

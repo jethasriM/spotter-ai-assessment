@@ -1,5 +1,28 @@
-# Python Virtual Environments
-.venv/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
 venv/
+.venv/
 env/
-ENV/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local config
+.env
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# The assessment data is supplied by Spotter. Uncomment to keep it out of the repo.
+# data/
+# Data/
